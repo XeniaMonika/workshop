@@ -1,0 +1,9 @@
+.narrow-blockquote {
+    display: inline-block !important;  /* Ensure blockquotes appear side by side */
+    width: 45%; /* Adjust the width to make the blockquote as narrow as you like */
+    margin: 10px 2%; /* Adjust spacing between blockquotes */
+    font-size: 16px; /* Set font size to ensure readability */
+    padding: 10px;
+    border-left: 3px solid #ccc; /* Optional: Add a border for visual distinction */
+    box-sizing: border-box;
+  }
