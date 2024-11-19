@@ -6,8 +6,7 @@
 
 		<title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/custom.css">
+		<link rel="stylesheet" href="dist/reset.css">	
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/theme/black.css">
 
@@ -22,104 +21,345 @@
 				<section>
 					<h2>Why Digital Methods?</h2>
 					<ol>
-						<li>Access to Large Datasets</li>
-						<li>Exploration of Large-Scale Patterns</li>
+						<li class="fragment">Access to Large Datasets</li>
+						<li class="fragment">Exploration of Large-Scale Patterns</li>
 					</ol>
-					<blockquote style="font-size: 20px;">	
-						 Close Reading: A detailed analysis of individual texts, focusing on careful examination of language, structure, and meaning in specific passages or entire works.						
-					  </blockquote>
-					  <blockquote style="font-size: 20px;">
-						 Distant Reading: A computational approach to analyzing large text collections, using digital tools to identify patterns, trends, and relationships across multiple texts without close individual reading.
-					</blockquote>
+					<div class="fragment">
+					<div class="container">
+						<div class="col">
+							<p>Close Reading</p>
+						</div>
+						<div class="col">
+							<p>Distant Reading</p>			
+						</div>						
+					</div>
+				</div>
+					<div class="container">
+						<div class="col">
+							<blockquote class="fragment" style="font-size: 20px;">	
+								A detailed analysis of individual texts, focusing on careful examination of language, structure, and meaning in specific passages or entire works.						
+							 </blockquote>
+						</div>
+						<div class="col">						
+							<blockquote class="fragment" style="font-size: 20px;">
+								A computational approach to analyzing large text collections, using digital tools to identify patterns, trends, and relationships across multiple texts without close individual reading.
+						   </blockquote>
+						</div>						
+					</div>					 
 					</section>				
 				<section>
 					<h2>Why Digital Methods?</h2>
 					<ol>
-						<li>Improved accessibility of research data</li>
-						<li>Increased efficiency</li>					
-						<li>Interdisciplinary collaboration</li>
-						<li>New forms of scholarship</li>
-						<li>Preservation of cultural heritage</li>
+						<li class="fragment">Improved accessibility of research data</li>
+						<li class="fragment">Increased efficiency</li>					
+						<li class="fragment">Interdisciplinary collaboration</li>
+						<li class="fragment">New forms of scholarship</li>
+						<li class="fragment">Preservation of cultural heritage</li>
 					</ol>
 					</section>
 					<section>
-						<section>
-							<h2>How to start?</h2> 
-							<p>You need texts in a machine-readable format!</p>
-							<ol>
-								<li>Use existing corpora and repositories.</li>							
-							</ol>
-							<a href="#/2/1" class="navigate-down"></a>
-						</section>
-						<section>
-							<ul>
-								<li><a href="https://github.com/OpenITI/RELEASE">OpenITI</a> (Arabic and Persian texts from the 7th to the 20th century)</li>
-								<li><a href="https://shamela.ws">Maktaba Shamela</a> (Arabic texts from the 7th to the 20th century)</li>
-								<li><a href="https://www.hindawi.org/">Hindawi</a> (Modern Arabic literature)</li>
-								<li><a href="https://www.nusus.net/">Nuṣūṣ</a> (Classical Arabic texts, mostly on Sufism and falsafa)</li>
-								<li><a href="https://www.aldiwan.net/">Aldiwan</a> (Arabic poetry)</li>
-								<li><a href="https://ganjoor.net/">Ganjoor</a> (classical Persian poetry)</li>
-							</ul> 
-						</section>
-						<section data-background-iframe="https://www.hindawi.org/" data-background-interactive></section>
+					<h2>Overview of Digital Methods</h2>
+					<ol class="fragment">
+						<li>Text Visualization and Concordances</li>
+						<li>Topic Modeling</li>					
+						<li>Sentiment Analysis</li>
+						<li>Network Analysis</li>
+						<li>Stylometry</li>
+					</ol>
+				</section>
+				<section>
+					<section style="font-size: 20px; text-align: left;">
+						<h2>Text Visualization and Concordances</h2>
+						<p><b>Definition:</b> <span class="fragment">Techniques for visualizing text patterns (e.g., word frequencies, keyword contexts) to gain insight into structure and content without detailed reading.</span></p>									
+						<p><b>Research Question (RQ) 1:</b></p>
+						<p><b>RQ 2:</b></p>				
+						<p><b>Tools:</b></p>
+						<p><b>Examples:</b></p>
+						<a href="#/2/1" class="navigate-down"></a>
 					</section>
-					<section>
-						<section>
+					<section><iframe style='width: 891px; height: 278px;' src='https://voyant-tools.org/tool/Cirrus/?corpus=austen&subtitle=The%20Works%20of%20Jane%20Austen'></iframe></section>
+					<section><iframe style='width: 891px; height: 378px;' src='https://voyant-tools.org/tool/Trends/?query=mr&query=mrs&query=said&query=miss&query=think&corpus=austen&subtitle=The%20Works%20of%20Jane%20Austen'></iframe></section>
+					<section><iframe style='width: 891px; height: 328px;' src='https://voyant-tools.org/tool/Correlations/?corpus=austen&subtitle=The%20Works%20of%20Jane%20Austen'></iframe></section>
+					<section style="font-size: 20px; text-align: left;">
+						<h2>Text Visualization and Concordances</h2>
+						<p><b>Definition:</b> Techniques for visualizing text patterns (e.g., word frequencies, keyword contexts) to gain insight into structure and content without detailed reading.</p>									
+						<p><b>Research Question (RQ) 1:</b><span class="fragment"></a> How does the word hikma (wisdom) appear in various contexts across different Sufi treatises?</span></p>
+						<p><b>RQ 2:</b><span class="fragment"></a> What recurring concepts and themes emerge in the foundational texts of the Mu'tazilite tradition, and how are they interconnected?</span></p>				
+						<p><b>Tools:</b><span class="fragment"></a> <a href="https://voyant-tools.org/">Voyant Tools</a>, <a href="https://www.laurenceanthony.net/software/antconc/">AntConc</a></span></p>
+						<p><b>Examples:</b><span class="fragment"></a><a href="https://www.katalog.fh-zwickau.de/Record/0-1765543762"> Mummelthei, V. "The Sea and the Beloved"</a></span></p>
+					</section>
+				</section>
+				<section>
+					<section style="font-size: 20px; text-align: left;">
+						<h2>Topic Modeling</h2>
+						<p><b>Definition:</b> <span class="fragment">A computational technique used to identify and group recurring themes or "topics" in a collection of texts based on word co-occurrence patterns.</span></p>
+						<p><b>RQ 1:</b> </p>
+						<p><b>RQ 2:</b> </p>				
+						<p><b>Tools: </b></p>
+						<p><b>Examples:</b></p>
+						<a href="#/2/1" class="navigate-down"></a>
+					</section>
+					<section><iframe style='width: 891px; height: 328px;' src='https://voyant-tools.org/tool/Topics/?corpus=austen&subtitle=The%20Works%20of%20Jane%20Austen'></iframe></section>
+					<section style="font-size: 20px; text-align: left;">
+						<h2>Topic Modeling</h2>
+						<p><b>Definition:</b> A computational technique used to identify and group recurring themes or "topics" in a collection of texts based on word co-occurrence patterns.</p>
+						<p><b>RQ 1:</b> <span class="fragment">What are the dominant themes in medieval Islamic legal texts, and how do they evolve across different centuries?</span></p>
+						<p><b>RQ 2:</b><span class="fragment"> Which topics dominate Sufi poetry, and how do they differ across regions such as Persia, the Maghreb, and South Asia?</span></p>				
+						<p><b>Tools: </b> <span class="fragment"><a href="https://voyant-tools.org/">Voyant Tools</a>, <a href="https://mimno.github.io/Mallet/topics.html">Mallet</a>, <a href="https://dariah-de.github.io/TopicsExplorer/">TopicsExplorer</a></span></p>
+						<p><b>Examples:</b><span class="fragment"><a href="https://www.katalog.fh-zwickau.de/Record/0-1765543762"> Mummelthei, V. "The Sea and the Beloved"</a></span></p>
+					</section>
+				</section><section style="font-size: 20px; text-align: left;">
+					<h2>Sentiment Analysis</h2>
+					<p><b>Definition:</b> <span class="fragment"> Process of determining the emotional tone (positive, negative, or neutral) expressed in text. It can be based on pattern matching (specific words or phrases linked to emotions) or machine learning (models trained on labeled data to recognize sentiment based on context and word relationships).</span></p>			
+					<p><b>RQ 1:</b> <span class="fragment">What emotions are predominant in the Dīwān (poetry collection) of Al-Mutanabbi, and how do they shift across his oeuvre?</span></p>					
+					<p><b>RQ 2:</b> <span class="fragment">What is the emotional tone in 18th-century Islamic critiques of Western colonialism? Are these texts primarily hostile or welcoming toward Western influence?</span></p>
+					<p><b>Tools:</b> <span class="fragment"> <a href="https://stanfordnlp.github.io/CoreNLP/sentiment.html">Stanford NLP </a>(Arabic, Chinese, Hebrew, etc.), <a href="https://camel-tools.readthedocs.io/en/latest/api/sentiment.html">CAMeL Tools</a> (Arabic), <a href="https://www.liwc.app/">LIWC</a> (Arabic, Chinese, Hebrew, etc., payment  required) </span></p>
+					<p><b>Disclaimer:</b><span class="fragment"> Simple tools usually don't support NLS, the above free tools require some programming.</span></p>
+				</section>
+				<section>
+					<section style="font-size: 20px; text-align: left;">
+						<h2>Network Analysis</h2>					
+						<p><b>Definition:</b> <span class="fragment">A method used to study the relationships and connections between entities (such as people, texts, or ideas) by representing them as a graph.</span></p>
+						<p><b>RQ 1:</b> <span class="fragment">How are the main characters in Naguib Mahfouz's "The Cairo Trilogy" interconnected, and what does this reveal about the social and political relationships in early 20th-century Egypt?</span></p>
+						<p><b>RQ 2:</b><span class="fragment"> What role did key figures like Al-Farabi and Avicenna play in the dissemination of Greek philosophy in the Islamic world?</span></p>
+						<p><b>Tools:</b><span class="fragment"> <a href="https://gephi.org/">Gephi</a></span></p>					
+						<a href="#/2/1" class="navigate-down"></a>
+					</section>
+					<section style="font-size: 20px;">
+						Network Analysis of <i style="font-style: italic !important">Game of Thrones</i>: <a href="https://medium.com/web-mining-is688-spring-2021/web-of-thrones-255139b930bb">instructions here</a>
+						<img src=".\assets\NA.webp" alt="Test Image" class="padded-image"></section>	
+				</section>	
+				<section>	
+					<section style="font-size: 20px; text-align: left;">
+						<h2>Stylometry</h2>
+						<p><b>Definition:</b><span class="fragment"> Statistical  analysis of writing style based on machine learning to identify patterns, compare authors, or determine the authorship of anonymous or disputed texts.</span></p>
+						<p><b>RQ 1:</b><span class="fragment"> Do texts attributed to Ibn Taymiyyah share stylistic patterns with his verified works?</span></p>
+						<p><b>RQ 2:</b><span class="fragment"> Can we identify stylistic differences between the early and late works of Al-Ghazali?</span></p>				
+						<p><b>Tools:</b><span class="fragment"> <a href="https://computationalstylistics.github.io/stylo_nutshell/">R package Stylo</a> (some basic programming needed)</p>	
+						<a href="#/2/1" class="navigate-down"></a>			
+					</section>
+					<section style="font-size: 20px;">
+						Stylistic Analysis of <i style="font-style: italic !important">al-Qaṣr al-masḥūr</i>
+						<img src=".\assets\SVM.png" alt="Test Image" class="padded-image-two"></section>
+				</section>	
+				<section>
+						<section style="font-size: 25px">
 							<h2>How to start?</h2> 
-							<p>You need texts in a machine-readable format!</p>
+							<p><span class="fragment">You need texts in a machine-readable format (TXT, CSV, XML, JSON)!</span></p>
 							<ol>
-								<li>Use existing corpora and repositories.</li>
-								<li>Use texts publish on websites - copy-paste or scrape them.</li>
-								<li>Digitize the texts yourself - OCR, HTR.</li>
+								<li class="fragment">Use texts published on websites - copy-paste or scrape them (<a href="https://pypi.org/project/beautifulsoup4/">Beautiful Soup</a>, <a href="https://www.selenium.dev/">Selenium</a>)</li>	
+								<li class="fragment">Digitize the texts yourself - OCR, HTR.</li>						
 							</ol>
 							<a href="#/2/1" class="navigate-down"></a>
 						</section>
 						<section data-background-iframe="https://www.transkribus.org/de" data-background-interactive></section>
 						<section><a href="https://escriptorium.inria.fr/">eScriptorium</a></section>
 					</section>
+					<section style="font-size: 25px">
+							<h2>How to start?</h2> 
+							<p>You need texts in a machine-readable format (TXT, CSV, XML, JSON)!</p>
+							<ol>
+								<li>Use texts published on websites - copy-paste or scrape them (<a href="https://pypi.org/project/beautifulsoup4/">Beautiful Soup</a>, <a href="https://www.selenium.dev/">Selenium</a>)</li>	
+								<li>Digitize the texts yourself - OCR, HTR.</li>
+								<li class="fragment">Use existing corpora and repositories.</li>						
+							</ol>
+						</section>
 					<section>
+						<section>
+							<ul>
+								<li>OpenITI (<a href="https://github.com/OpenITI/RELEASE">corpus</a>, <a href="https://kitab-project.org/metadata/">metadata search</a>)</a>: Arabic and Persian texts from the 7th to the 20th century</li>
+								<li><a href="https://shamela.ws">Maktaba Shamela</a>: Arabic texts from the 7th to the 20th century</li>
+								<li><a href="https://www.hindawi.org/">Hindawi</a>: modern Arabic literature</li>
+								<li><a href="https://www.nusus.net/">Nuṣūṣ</a>: classical Arabic texts, mostly on Sufism and falsafa</li>
+								<li><a href="https://www.aldiwan.net/">Aldiwan</a>: Arabic poetry</li>
+								<li><a href="https://ganjoor.net/">Ganjoor</a>: classical Persian poetry</li>
+							</ul> 
+							<a href="#/2/1" class="navigate-down"></a>
+						</section>
+						<section data-background-iframe="https://www.hindawi.org/" data-background-interactive></section>
+					</section>
+					<section style="font-size: 25px">
 						<h2>Text-Preprocessing</h2>
 						<ul>
-							<li>Plain text - .txt</li>
-							<li>Tokenized text - most tools do it for you</li>
-							<li>Lemmatized text - knows, knew, known as know</li>
-							<li>Annotated text
-								<ul>
-									<li>Automatic annotation (e.g. POS-tagging, NER)</li>
-									<li>Manual annotation (e.g. interactions between entities in a text)</li>
-								</ul>
-							</li>
-							<li>Stop word list, normalization of orthography, removal of numbers, punctuation, etc.</li>
+							<li class="fragment" style="margin-bottom: 10px;">Plain text: <span class="highlight">We both knew that she knows that we know</span></li>
+							<li class="fragment"style="margin-bottom: 10px;">Tokenized text: <span class="highlight">We</span>  <span class="highlight">both</span> <span class="highlight">knew</span> <span class="highlight">that</span> <span class="highlight">she</span> <span class="highlight">knows</span> <span class="highlight">that</span> <span class="highlight">we</span> <span class="highlight">know</span></li>
+							<li class="fragment" style="margin-bottom: 10px;">Lemmatized text: <span class="highlight">We</span>  <span class="highlight">both</span> <span class="highlight">know</span> <span class="highlight">that</span> <span class="highlight">she</span> <span class="highlight">know</span> <span class="highlight">that</span> <span class="highlight">we</span> <span class="highlight">know</span></li>
+							
 						</ul>
+					</section>
+					<section style="font-size: 20px;">
+						<h2>Text-Preprocessing</h2>
+						<ul>
+							<li>Annotated text <span class="highlight">Albert Einstein was born in Ulm, Germany in 1879.</span>
+								<br>
+								<br>
+								<ul>
+									<li class="fragment">Automatic annotation (e.g. POS-tagging, NER)</li>
+									<div class="fragment">
+									<p>POS-tagging: <span class="highlight">Albert/NNP Einstein/NNP was/VBD born/VBN in/IN Ulm/NNP ,/, Germany/NNP in/IN 1879/CD</span></p>
+									</div>
+									<div class="fragment">
+									<p>NER:
+									<table>
+										<thead>
+										  <tr>
+											<th style="background-color: #423f3f; padding: 8px;">Word</th>
+											<th style="background-color: #423f3f; padding: 8px;">Entity Type</th>
+										  </tr>
+										</thead>
+										<tbody>
+										  <tr>
+											<td>Albert Einstein</td>
+											<td>PERSON</td>
+										  </tr>
+										  <tr>
+											<td>was</td>
+											<td>O</td>
+										  </tr>
+										  <tr>
+											<td>born</td>
+											<td>O</td>
+										  </tr>
+										  <tr>
+											<td>in</td>
+											<td>O</td>
+										  </tr>
+										  <tr>
+											<td>Ulm</td>
+											<td>LOCATION</td>
+										  </tr>
+										  <tr>
+											<td>Germany</td>
+											<td>LOCATION</td>
+										  </tr>
+										  <tr>
+											<td>in</td>
+											<td>O</td>
+										  </tr>
+										  <tr>
+											<td>1879</td>
+											<td>DATE</td>
+										  </tr>
+										</tbody>
+									  </table>
+									</p>
+									</div>
+									<li class="fragment">Manual annotation (e.g. interactions between entities in a text)</li>
+									<br>
+									<div class="fragment">
+									<table border="1" style="border-collapse: collapse; text-align: left; width: 100%;">
+										<tr>
+											<th style="background-color: #423f3f; padding: 8px;">Entity 1</th>
+											<th style="background-color: #423f3f; padding: 8px;">Interaction Type</th>
+											<th style="background-color: #423f3f; padding: 8px;">Entity 2</th>
+											<th style="background-color: #423f3f; padding: 8px;">Description</th>
+										</tr>
+										<tr>
+											<td style="padding: 8px;">Albert Einstein</td>
+											<td style="padding: 8px;">Subject of</td>
+											<td style="padding: 8px;">was born</td>
+											<td style="padding: 8px;">Albert Einstein is the subject who experienced the event of being born.</td>
+										</tr>
+										<tr>
+											<td style="padding: 8px;">Albert Einstein</td>
+											<td style="padding: 8px;">Born in</td>
+											<td style="padding: 8px;">Ulm</td>
+											<td style="padding: 8px;">Albert Einstein was born in the location Ulm.</td>
+										</tr>
+										<tr>
+											<td style="padding: 8px;">Albert Einstein</td>
+											<td style="padding: 8px;">Born in</td>
+											<td style="padding: 8px;">Germany</td>
+											<td style="padding: 8px;">Albert Einstein was born in the country Germany.</td>
+										</tr>
+										<tr>
+											<td style="padding: 8px;">Albert Einstein</td>
+											<td style="padding: 8px;">Born in</td>
+											<td style="padding: 8px;">1879</td>
+											<td style="padding: 8px;">Albert Einstein was born in the year 1879.</td>
+										</tr>
+									</table>
+								</div>	
+								</ul>
+							</li>							
+						</ul>
+					</section>
+					<section style="font-size: 25px;">
+						<h2>Text-Preprocessing</h5>
+						<ul>
+							<li>Stop word list: <span class="highlight">Albert Einstein born Ulm, Germany 1879</span></li>
+							<li>Normalization of orthography</li>
+							<li>Removal of numbers, punctuation, etc.</li>
+						</ul>
+					</section>
+					<section>
+						<table border="1" style="border-collapse: collapse; width: 100%; font-size: 14px; text-align: left;">
+							<thead>
+							  <tr>
+								<th style="background-color: #423f3f; padding: 10px; font-weight: bold; text-align: center;  border: 1px solid #ddd;">Method</th>
+								<th style="background-color: #423f3f; padding: 10px; font-weight: bold; text-align: center;  border: 1px solid #ddd;">Preprocessing Needed</th>
+							  </tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td style="padding: 10px; border: 1px solid #ddd;">Text Visualization and Concordances</td>
+									<td style="padding: 10px; border: 1px solid #ddd;">
+									  <ul>
+										<li>Plain text</li>
+										<li>Tokenized text (most tools handle this automatically)</li>
+										<li>Lemmatized text (optional, depending on analysis focus)</li>
+										<li>Stop word list, normalization of orthography, removal of numbers, punctuation, etc.</li>
+									  </ul>
+									</td>
+								  </tr>
+							  <tr>
+								<td style="padding: 10px; border: 1px solid #ddd;">Topic Modeling</td>
+								<td style="padding: 10px; border: 1px solid #ddd;">
+								  <ul>
+									<li>Plain text</li>
+									<li>Tokenized text (most tools handle this automatically)</li>
+									<li>Stop word list, normalization of orthography, removal of numbers, punctuation, etc.</li>
+								  </ul>
+								</td>
+							  </tr>
+							  <tr>
+								<td style="padding: 10px; border: 1px solid #ddd;">Sentiment Analysis</td>
+								<td style="padding: 10px; border: 1px solid #ddd;">
+								  <ul>
+									<li>Plain text</li>
+									<li>Tokenized text (most tools handle this automatically)</li>
+									<li>Stop word list, normalization of orthography, removal of numbers, punctuation, etc.</li>
+								  </ul>
+								</td>
+							  </tr>							  
+							  <tr>
+								<td style="padding: 10px; border: 1px solid #ddd;">Network Analysis</td>
+								<td style="padding: 10px; border: 1px solid #ddd;">
+								  <ul>
+									<li>Annotated text (manual or automatic annotation, e.g., interactions between entities in a text)</li>
+								  </ul>
+								</td>
+							  </tr>	
+							  <tr>
+								<td style="padding: 10px; border: 1px solid #ddd;">Stylometry</td>
+								<td style="padding: 10px; border: 1px solid #ddd;">
+								  <ul>
+									<li>Plain text</li>
+									<li>Normalization of orthography, removal of numbers, punctuation, etc.</li>
+								  </ul>
+								</td>
+							  </tr>						  
+							</tbody>
+						  </table>	  
 					</section>
 					<section>
 						<h3>Some useful resources</h3>
 						<ul>
 							<li><a href="https://fortext.net/">forText</a></li>
-							<li>Find otehrs laster</li>
+							<li>WW3 schools</li>
 							<li></li>						
 						</ul>
 					</section>
-					<section>
-					<h2>Overview of Digital Methods</h2>
-					<ol>
-						<li>Topic Modeling -txt pain</li>
-						<li>Stylometry txt plain</li>
-						<li>Sentiment Analysis txt plain</li>
-						<li>Network Analysis manual annoation - csv, xml, json</li>
-						<li>Text Visualization and Concordances plain txt, lemmatized text, pos zagges text</li>
-					</ol>
-				</section>
-				<section>
-					<h2>Methods</h2>
-					<p><i>Question:</i></p>
-					<p><i>Definition:</i></p>
-					<p></p>
-				</section>				
-				<section>
-					<h2>Topic Modeling</h2>
-				</section>
-				
 			</div>
 		</div>
 
@@ -138,5 +378,39 @@
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
 		</script>
+		<style>
+			  table {
+				font-size: 12px; /* Decrease the font size to 12px (adjust as needed) */
+				border-collapse: collapse;
+				width: auto; /* Makes the table fit its content */
+				margin-left: 0 !important; /* Aligns the entire table to the left */
+			}
+
+			
+			.padded-image {
+			
+				width: 66%;      /* Make image take up the full width of the container */
+				height: auto;     /* Make image take up the full height of the container */
+				object-fit: contain; /* Ensures the entire image is visible without stretching */
+				padding-bottom: 20px;
+				margin-bottom: 20px;
+
+			
+			}
+			.padded-image-two {
+			
+				width: 100%;      /* Make image take up the full width of the container */
+				height: auto;     /* Make image take up the full height of the container */
+				object-fit: contain; /* Ensures the entire image is visible without stretching */
+				padding-bottom: 20px;
+				margin-bottom: 20px;
+			}
+			.highlight {
+				background-color: #423f3f; /* Gray background */
+				border-radius: 5px;       /* Rounded edges */
+				padding: 2px 5px;         /* Padding around the text */
+				display: inline-block;    /* Ensures padding applies cleanly */
+			}
+		</style>
 	</body>
 </html>
