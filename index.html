@@ -16,8 +16,20 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Joloo!</section>
-				<section>TOC</section>
+				<section><h2>Introduction to Digital Research Methods</h2></section>
+				<section>
+					<h3>Plan</h3>
+					<ol>
+						<li>Theoretical Background</li>
+						<ul>
+							<li>Why Digital Methods</li>
+							<li>Overview of Chosen Methods</li>
+							<li>Data preparation</li>
+							<li>Useful links</li>
+						</ul>
+						<li>Hands-on</li>						
+					</ol>
+				</section>		
 				<section>
 					<h2>Why Digital Methods?</h2>
 					<ol>
@@ -308,6 +320,7 @@
 										<li>Plain text</li>
 										<li>Tokenized text (most tools handle this automatically)</li>
 										<li>Lemmatized text (optional, depending on analysis focus)</li>
+										<li>POS-tagging</li>
 										<li>Stop word list, normalization of orthography, removal of numbers, punctuation, etc.</li>
 									  </ul>
 									</td>
@@ -355,11 +368,39 @@
 					<section>
 						<h3>Some useful resources</h3>
 						<ul>
-							<li><a href="https://fortext.net/">forText</a></li>
-							<li>WW3 schools</li>
-							<li></li>						
+							<li><a href="https://fortext.net/">forText</a></li>							
+							<li><a href="https://www.youtube.com/watch?v=4jCGLmbLFT0&ab_channel=ualbanylibrary">Voyant Tutorial</a></li>	
+							<li><a href="https://www.w3schools.com/">W3Schools</a></li>
+							<li><a href="https://voyant-tools.org/docs/">Voyant Documentation</a></li>	
+							<li><a href="https://github.com/mohataher/arabic-stop-words">Arabic Stopwords</a></li>
+							<li><a href="https://colab.research.google.com/drive/1Y3qCbD6Gw1KEw-lixQx1rI6WlyWnrnDS?usp=sharing">CAMeL Tools Guided Tour </a></li>	
+							<li><a href="https://camel-tools.readthedocs.io/en/latest/getting_started.html">CAMeL Tools Documentation</a></li>					
 						</ul>
-					</section>
+				</section>
+				<section>
+					<h2>Hands-on:</h2>
+					<h3>voyant Tools</h3>
+				</section>	
+				<section>
+					<h2>Exploratory Text Analysis</h2>
+					<p>Tasks</p>
+					<ol>
+						<li>What insights can we get from vocabulary about the works and the author?</li>
+						<ul>
+							<li>Domain-specific language usage (e.g., historical, cultural, or political terms).</li>
+							<li>Repeated motifs or symbols that define the worldview or concerns.</li>
+							<li>The author's stylistic tendencies</li>
+						</ul>
+						<li>How did they change with time?</li>
+						<ul>
+							<li>Personal growth or changing views of the author.</li>
+							<li>Response to historical or societal changes.</li>
+							<li>Evolution of genre or audience preferences.</li>
+
+						</ul>
+						
+					</ol>
+				</section>
 			</div>
 		</div>
 
@@ -410,6 +451,17 @@
 				border-radius: 5px;       /* Rounded edges */
 				padding: 2px 5px;         /* Padding around the text */
 				display: inline-block;    /* Ensures padding applies cleanly */
+			}
+			.container {
+				display: flex; /* Ensures that the child elements are laid out side by side */
+				gap: 20px; /* Optional: Adjusts the spacing between columns */
+			}
+
+			.col {
+				flex: 1; /* Distributes available space equally among columns */
+				text-align: center; /* Aligns text within each column */
+				padding: 10px;
+				
 			}
 		</style>
 	</body>
